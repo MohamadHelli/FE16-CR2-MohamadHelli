@@ -1,5 +1,10 @@
-@import "./imports/media";
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100&display=swap');
+@mixin photo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 * {
     margin: 0;
 }
@@ -84,7 +89,7 @@
     margin-top: 3%;
     margin-bottom: 5%;
     grid-template-columns: repeat(3, 30vh);
-    grid-template-rows: repeat(4, 10vw);
+    grid-template-rows: repeat(3, 10vw);
     row-gap: 20px;
     column-gap: 50px;
 }
@@ -106,6 +111,9 @@
     a {
         text-decoration: none;
         color: white;
+        &:hover {
+            color: rgb(37, 143, 143);
+        }
     }
     p {
         color: white;
@@ -126,5 +134,44 @@
     justify-content: center;
     h3 {
         color: white;
+    }
+}
+
+@media screen and (min-width:1001px) and (max-width:1300px) {
+    .list {
+        display: grid;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 5%;
+        grid-template-columns: repeat(3, 35vh);
+        grid-template-rows: repeat(4, 30vw);
+        row-gap: 30px;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1000px) {
+    .list {
+        display: grid;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 5%;
+        grid-template-columns: repeat(2, 25vh);
+        grid-template-rows: repeat(4, 25vw);
+        row-gap: 30px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .list {
+        display: grid;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 5%;
+        grid-template-columns: repeat(1, 45vh);
+        grid-template-rows: repeat(9, 50vw);
+        row-gap: 30px;
+        padding: 5px;
     }
 }

@@ -1,22 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100&display=swap");
-@media screen and (max-width: 1000px) {
-  .list {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 3%;
-    margin-bottom: 5%;
-    -ms-grid-columns: (70vh)[2];
-        grid-template-columns: repeat(2, 70vh);
-    -ms-grid-rows: (100vw)[4];
-        grid-template-rows: repeat(4, 100vw);
-    row-gap: 30px;
-    padding: 5px;
-  }
-}
-
 * {
   margin: 0;
 }
@@ -140,8 +122,8 @@
   margin-bottom: 5%;
   -ms-grid-columns: (30vh)[3];
       grid-template-columns: repeat(3, 30vh);
-  -ms-grid-rows: (10vw)[4];
-      grid-template-rows: repeat(4, 10vw);
+  -ms-grid-rows: (10vw)[3];
+      grid-template-rows: repeat(3, 10vw);
   row-gap: 20px;
   -webkit-column-gap: 50px;
           column-gap: 50px;
@@ -180,6 +162,10 @@
   color: white;
 }
 
+.footer1 a:hover {
+  color: #258f8f;
+}
+
 .footer1 p {
   color: white;
 }
@@ -209,5 +195,59 @@
 
 .last-text h3 {
   color: white;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+  .list {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    -ms-grid-columns: (35vh)[3];
+        grid-template-columns: repeat(3, 35vh);
+    -ms-grid-rows: (30vw)[4];
+        grid-template-rows: repeat(4, 30vw);
+    row-gap: 30px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+  .list {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    -ms-grid-columns: (25vh)[2];
+        grid-template-columns: repeat(2, 25vh);
+    -ms-grid-rows: (25vw)[4];
+        grid-template-rows: repeat(4, 25vw);
+    row-gap: 30px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .list {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    -ms-grid-columns: (45vh)[1];
+        grid-template-columns: repeat(1, 45vh);
+    -ms-grid-rows: (50vw)[9];
+        grid-template-rows: repeat(9, 50vw);
+    row-gap: 30px;
+    padding: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
